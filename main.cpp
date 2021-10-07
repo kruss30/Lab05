@@ -5,46 +5,40 @@
 int main() {
     int linearSearch(std::vector<std::string> datatSet, std::string element);
     int binarySearch(std::vector<std::string> datatSet, std::string element);
+
     std::string message = "not_here";
 
     long start = systemTimeNanoseconds();
-    std::cout << "\nBinary Search Time: ";
     binarySearch(getStringData(), message);
     long end = systemTimeNanoseconds();
-    std::cout << end-start;
+    std::cout << "\nBinary Search Time: " << end-start;
     start = systemTimeNanoseconds();
-    std::cout << "\nLinear Search Time: ";
     linearSearch(getStringData(), message);
     end = systemTimeNanoseconds();
-    std::cout << end-start;
+    std::cout << "\nLinear Search Time: " << end-start;
 
     message = "mzzzz";
     start = systemTimeNanoseconds();
-    std::cout << "\nBinary Search Time: ";
     binarySearch(getStringData(), message);
     end = systemTimeNanoseconds();
-    std::cout << end-start;
+    std::cout << "\nBinary Search Time: " << end-start;
     start = systemTimeNanoseconds();
-    std::cout << "\nLinear Search Time: ";
     linearSearch(getStringData(), message);
     end = systemTimeNanoseconds();
-    std::cout << end-start;
+    std::cout << "\nLinear Search Time: " << end-start;
 
     message = "aaaaa";
     start = systemTimeNanoseconds();
-    std::cout << "\nBinary Search Time: ";
     binarySearch(getStringData(), message);
     end = systemTimeNanoseconds();
-    std::cout << end-start;
+    std::cout << "\nBinary Search Time: " << end-start;
     start = systemTimeNanoseconds();
-    std::cout << "\nLinear Search Time: ";
     linearSearch(getStringData(), message);
     end = systemTimeNanoseconds();
-    std::cout << end-start;
+    std::cout << "\nLinear Search Time: " << end-start;
 
     return 0;
 }
-
 
 int linearSearch(std::vector<std::string> dataSet, std::string element) {
     for (int i = 0; i < dataSet.size(); i++) {
